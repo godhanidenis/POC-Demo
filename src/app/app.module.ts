@@ -6,15 +6,10 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HelloComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, HelloComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [HelloComponent],
 })
-export class AppModule { }
+export class AppModule {}
