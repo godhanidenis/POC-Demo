@@ -13,12 +13,12 @@ import { createCustomElement } from '@angular/elements';
   bootstrap: [AppComponent],
 })
 export class AppModule {
-  constructor(private injector: Injector) {
+  constructor(private injector: Injector) {}
+
+  ngDoBootstrap() {
     const widgetElement = createCustomElement(HelloComponent, {
       injector: this.injector,
     });
     customElements.define('hello-widget', widgetElement);
   }
-
-  ngDoBootstrap() {}
 }
