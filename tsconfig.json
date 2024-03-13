@@ -10,6 +10,9 @@
     "paths": {
       "hello-lib": [
         "dist/hello-lib"
+      ],
+      "hello-widget": [
+        "dist/hello-widget"
       ]
     },
     "noPropertyAccessFromIndexSignature": true,
