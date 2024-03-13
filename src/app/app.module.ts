@@ -10,7 +10,7 @@ import { createCustomElement } from '@angular/elements';
   declarations: [AppComponent, HelloComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [HelloComponent],
 })
 export class AppModule {
   constructor(private injector: Injector) {}
